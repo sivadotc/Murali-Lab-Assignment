@@ -27,7 +27,7 @@ import com.example.muralilabassignment.ui.theme.Typography
 fun HomeCompactScreen(){
     Column {
         GreetingSection(name = "Murali")
-        ChipSection(chips = listOf("Murali","2019WA86641","Lab 3","SDPD","CSIWZ424"))
+        ChipSection(chips = listOf("Murali","2019WA86641","Lab 4","SDPD","CSIWZC424"))
         ObjectiveSection()
         CurrentLabSection()
     }
