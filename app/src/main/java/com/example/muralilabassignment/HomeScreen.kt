@@ -1,29 +1,23 @@
 package com.example.muralilabassignment
 
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import com.example.muralilabassignment.ui.theme.*
-import com.ramcosta.composedestinations.annotation.Destination
-import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 
-@Destination(start = true)
+
 @Composable
-fun HomeScreen(navigator: DestinationsNavigator) {
+fun HomeScreen() {
     Box(modifier = Modifier
-        .background(DeepBlue)
         .fillMaxSize()
     ){
         val windowInfo = rememberWindowInfo()
         if (windowInfo.screenWidthInfo is WindowInfo.WindowType.Compact) {
-            HomeCompactScreen(navigator)
+            HomeCompactScreen()
         } else {
-            HomeMediumScreen(navigator)
+            HomeMediumScreen()
         }
     }
 }
-
 
 
